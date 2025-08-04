@@ -1,5 +1,4 @@
 ---
-const placeholderImageAlt = "Haion - Próximamente"
 import BadgeStatic from "@/components/BadgeStatic.astro"
 ---
 
@@ -7,27 +6,26 @@ import BadgeStatic from "@/components/BadgeStatic.astro"
   <div class="flex gap-4 mb-4">
     <img
       class="rounded-full shadow-lg size-16"
-      src="/haion_landing/me-hero.jpeg"
-      alt={placeholderImageAlt}
+      src="/haion_landing/logo-empresa.jpg"
+      alt="[NOMBRE_EMPRESA] - Logo"
     />
     <div class="flex items-center md:justify-center">
-      <BadgeStatic>Próximamente</BadgeStatic>
+      <BadgeStatic>[ESTADO_EMPRESA]</BadgeStatic>
     </div>
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    ¡Hola! Somos Haion
+    [SALUDO_PRINCIPAL]
   </h1>
   <p class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white mt-2">
-    Innovación
+    [PALABRA_CLAVE_EMPRESA]
   </p>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    Estamos trabajando en algo increíble.<br/>
-    Una nueva experiencia digital que cambiará<br/>
-    la forma en que interactúas con la tecnología.<br/>
-    ¡Mantente atento para más novedades!
+    [DESCRIPCION_PRINCIPAL]<br/>
+    [PROPUESTA_VALOR]<br/>
+    [LLAMADA_ACCION]
   </p>
 </div>

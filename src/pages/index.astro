@@ -1,41 +1,50 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 
-import AboutMe from "@/components/AboutMe.astro"
+import AboutCompany from "@/components/AboutCompany.astro"
+import Services from "@/components/Services.astro"
 import Contact from "@/components/Contact.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import ProfileCheck from "@/components/icons/ProfileCheck.astro"
+import Briefcase from "@/components/icons/Briefcase.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
 ---
 
 <Layout
-  title="Haion - Innovación Tecnológica | Próximamente"
-  description="Haion está desarrollando soluciones tecnológicas innovadoras. Especialistas en desarrollo web moderno, aplicaciones móviles y sistemas escalables. Mantente atento para descubrir nuestros próximos proyectos."
+  title="[NOMBRE_EMPRESA] - [TITULO_PRINCIPAL]"
+  description="[DESCRIPCION_META] - Describe aquí los servicios principales de tu empresa y lo que la hace única."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainer>
+    
     <div class="space-y-24">
-    <SectionContainer id="sobre-mi">
-      <TitleSection>
-        <ProfileCheck class="size-8" />
-        Sobre nosotros
-      </TitleSection>
-      <AboutMe />
-    </SectionContainer>
+      <SectionContainer id="sobre-nosotros">
+        <TitleSection>
+          <ProfileCheck class="size-8" />
+          Sobre Nosotros
+        </TitleSection>
+        <AboutCompany />
+      </SectionContainer>
 
-    <SectionContainer id="contacto">
-      <TitleSection>
-        <MailIcon class="size-8" />
-        Contacto
-      </TitleSection>
-      <Contact />
-    </SectionContainer>
-  </div>
+      <SectionContainer id="servicios">
+        <TitleSection>
+          <Briefcase class="size-8" />
+          Nuestros Servicios
+        </TitleSection>
+        <Services />
+      </SectionContainer>
+
+      <SectionContainer id="contacto">
+        <TitleSection>
+          <MailIcon class="size-8" />
+          Contacto
+        </TitleSection>
+        <Contact />
+      </SectionContainer>
+    </div>
   </main>
 </Layout>
