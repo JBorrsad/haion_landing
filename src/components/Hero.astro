@@ -1,13 +1,6 @@
 ---
 const placeholderImageAlt = "Haion - Próximamente"
 import BadgeStatic from "@/components/BadgeStatic.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
-import WhatsAppIcon from "@/components/icons/WhatsApp.astro"
-import GitHubIcon from "@/components/icons/GitHubNew.astro"
-import DownloadIcon from "@/components/icons/Download.astro"
-import SocialPill from "@/components/SocialPill.astro"
-import DownloadPill from "@/components/DownloadPill.astro"
 ---
 
 <div class="max-w-xl">
@@ -26,11 +19,9 @@ import DownloadPill from "@/components/DownloadPill.astro"
   >
     ¡Hola! Somos Haion
   </h1>
-  <div class="typewriter">
-    <p class="typewriter-text text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
-      Innovación
-    </p>
-  </div>
+  <p class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white mt-2">
+    Innovación
+  </p>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
@@ -39,61 +30,4 @@ import DownloadPill from "@/components/DownloadPill.astro"
     la forma en que interactúas con la tecnología.<br/>
     ¡Mantente atento para más novedades!
   </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:contacto@haion.com">
-      <MailIcon class="size-4" />
-      Contacto
-    </SocialPill>
-    <SocialPill href="https://wa.me/34000000000">
-      <WhatsAppIcon class="size-4" />
-      WhatsApp
-    </SocialPill>
-    <SocialPill href="https://github.com/Jborrsad/haion_landing">
-      <GitHubIcon class="size-4" />
-      Github
-    </SocialPill>
-    <SocialPill href="https://linkedin.com/company/haion">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
-  </nav>
 </div>
-
-<style>
-  .typewriter {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0.5rem;
-  }
-
-  .typewriter-text {
-    font-family: monospace;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-    border-color: #374151; /* gray-700 for light mode */
-    width: 0;
-    max-width: max-content;
-    animation: typing 3.5s steps(10) forwards, blink 1s step-end infinite;
-  }
-
-  .dark .typewriter-text {
-    border-color: #d1d5db; /* gray-300 for dark mode */
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 10ch; /* 10 caracteres para "Innovación" */
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-</style>
