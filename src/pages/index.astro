@@ -1,0 +1,71 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import AboutMe from "@/components/AboutMe.astro"
+import Contact from "@/components/Contact.astro"
+import Briefcase from "@/components/icons/Briefcase.astro"
+import CodeIcon from "@/components/icons/Code.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import Experience from "@/components/Experience.astro"
+import Education from "@/components/Education.astro"
+import EducationIcon from "@/components/icons/Education.astro"
+import ProfileCheck from "@/components/icons/ProfileCheck.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
+import TitleSection from "@/components/TitleSection.astro"
+---
+
+<Layout
+  title="Haion - Innovación Tecnológica | Próximamente"
+  description="Haion está desarrollando soluciones tecnológicas innovadoras. Especialistas en desarrollo web moderno, aplicaciones móviles y sistemas escalables. Mantente atento para descubrir nuestros próximos proyectos."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+    <SectionContainer id="experiencia">
+      <TitleSection>
+        <Briefcase class="size-8" />
+        Servicios
+      </TitleSection>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="formacion">
+      <TitleSection>
+        <EducationIcon class="size-8" />
+        Expertise
+      </TitleSection>
+      <Education />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        Proyectos
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <TitleSection>
+        <ProfileCheck class="size-8" />
+        Sobre nosotros
+      </TitleSection>
+      <AboutMe />
+    </SectionContainer>
+
+    <SectionContainer id="contacto">
+      <TitleSection>
+        <MailIcon class="size-8" />
+        Contacto
+      </TitleSection>
+      <Contact />
+    </SectionContainer>
+  </div>
+  </main>
+</Layout>
