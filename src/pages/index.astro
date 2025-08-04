@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro"
 import AboutCompany from "@/components/AboutCompany.astro"
 import Services from "@/components/Services.astro"
 import Contact from "@/components/Contact.astro"
+import CTA from "@/components/CTA.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
@@ -13,38 +14,57 @@ import TitleSection from "@/components/TitleSection.astro"
 ---
 
 <Layout
-  title="[NOMBRE_EMPRESA] - [TITULO_PRINCIPAL]"
-  description="[DESCRIPCION_META] - Describe aquí los servicios principales de tu empresa y lo que la hace única."
+  title="[NOMBRE_ASESORIA] - Asesoría Fiscal, Laboral y Contable"
+  description="Asesoría integral para empresas. Gestión clara, compromiso real. Servicios de asesoría fiscal, laboral y contable con el mejor equipo profesional."
 >
-  <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
-      <Hero />
-    </SectionContainer>
+  <main>
+    <!-- Hero a pantalla completa sin padding -->
+    <Hero />
     
-    <div class="space-y-24">
-      <SectionContainer id="sobre-nosotros">
-        <TitleSection>
-          <ProfileCheck class="size-8" />
-          Sobre Nosotros
-        </TitleSection>
-        <AboutCompany />
-      </SectionContainer>
+    <!-- Contenido con padding normal -->
+    <div class="px-4 pt-24">
+      <div class="space-y-24">
+        <SectionContainer id="sobre-nosotros">
+          <TitleSection>
+            <ProfileCheck class="size-8" />
+            Sobre nosotros
+          </TitleSection>
+          <AboutCompany />
+        </SectionContainer>
 
-      <SectionContainer id="servicios">
-        <TitleSection>
-          <Briefcase class="size-8" />
-          Nuestros Servicios
-        </TitleSection>
-        <Services />
-      </SectionContainer>
+        <SectionContainer id="servicios">
+          <TitleSection>
+            <Briefcase class="size-8" />
+            Nuestras áreas de especialización
+          </TitleSection>
+          <Services />
+        </SectionContainer>
 
-      <SectionContainer id="contacto">
-        <TitleSection>
-          <MailIcon class="size-8" />
-          Contacto
-        </TitleSection>
-        <Contact />
-      </SectionContainer>
+        <SectionContainer class="py-16">
+          <CTA />
+        </SectionContainer>
+
+        <!-- 
+        SECCIÓN TESTIMONIOS - COMENTADA PARA FUTURO USO
+        <SectionContainer id="testimonios">
+          <TitleSection>
+            <svg class="size-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+            </svg>
+            Lo que dicen nuestros clientes
+          </TitleSection>
+          <Testimonials />
+        </SectionContainer>
+        -->
+
+        <SectionContainer id="contacto">
+          <TitleSection>
+            <MailIcon class="size-8" />
+            Contacto
+          </TitleSection>
+          <Contact />
+        </SectionContainer>
+      </div>
     </div>
   </main>
 </Layout>

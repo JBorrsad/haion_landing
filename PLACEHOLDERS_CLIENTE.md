@@ -1,136 +1,138 @@
-# Guía de Placeholders para Personalizar la Web
+# Guía de Placeholders para Asesoría - Página Web
 
-Esta página web está preparada con placeholders que necesitas llenar con la información de tu cliente. Aquí tienes todos los campos que necesitas personalizar:
+Esta página web está preparada para una asesoría fiscal, laboral y contable. Aquí tienes todos los campos que necesitas personalizar:
 
 ## 📄 Página Principal (index.astro)
 
-- `[NOMBRE_EMPRESA]` - Nombre de la empresa del cliente
-- `[TITULO_PRINCIPAL]` - Título que aparecerá en la pestaña del navegador
-- `[DESCRIPCION_META]` - Descripción para SEO (máximo 160 caracteres)
+- `[NOMBRE_ASESORIA]` - Nombre de la asesoría (ej: "Asesoría García & Asociados")
 
 ## 🦸 Sección Hero (Encabezado principal)
 
-- `[ESTADO_EMPRESA]` - Estado actual (ej: "Abierto", "Nuevo", "Establecido desde 2020")
-- `[SALUDO_PRINCIPAL]` - Saludo principal (ej: "¡Hola! Somos TuEmpresa")
-- `[PALABRA_CLAVE_EMPRESA]` - Palabra clave que define la empresa (ej: "Innovación", "Calidad", "Excelencia")
-- `[DESCRIPCION_PRINCIPAL]` - Primera línea de descripción
-- `[PROPUESTA_VALOR]` - Segunda línea de descripción
-- `[LLAMADA_ACCION]` - Tercera línea de descripción
+**Hero a pantalla completa con imagen de fondo:**
 
-### 🖼️ Imagen Hero
-
-- Reemplazar `/haion_landing/logo-empresa.jpg` con el logo de la empresa
+- **Imagen de fondo:** `bg.jpg` (ya configurada)
+- **Overlay oscuro** para legibilidad del texto
+- **Título:** `[NOMBRE_ASESORIA]`
+- **Subtítulo:** "Fiscal · Laboral · Contable" (fijo)
+- **Eslogan:** "Gestión clara, compromiso real." (fijo)
+- **Descripción:** "Lo importante no es parecer expertos, sino serlo." (fijo)
+- **CTAs:** "Solicita una reunión gratuita" + "Ver nuestros servicios" (fijo)
+- **Indicador scroll** animado
 
 ## 🏢 Sección "Sobre Nosotros"
 
-- `[DESCRIPCION_EMPRESA_CORTA]` - Descripción breve de qué hace la empresa
-- `[SERVICIOS_PRINCIPALES]` - Lista de servicios principales
-- `[PROPUESTA_VALOR_DETALLADA]` - Explicación de qué los hace únicos
-- `[DESCRIPCION_EQUIPO]` - Descripción del equipo de trabajo
-- `[METODOLOGIA_TRABAJO]` - Cómo trabajan
-- `[TECNOLOGIAS_HERRAMIENTAS]` - Tecnologías que usan (si aplica)
-- `[RESULTADO_OBJETIVO]` - Qué logran para sus clientes
-- `[VALORES_EMPRESA]` - Valores fundamentales
-- `[OBJETIVOS_PROYECTOS]` - Objetivos que persiguen en cada proyecto
-- `[VISION_FUTURO_EMPRESA]` - Visión a futuro de la empresa
-- `[LLAMADA_CONTACTO]` - Invitación a contactar
+**Contenido fijo basado en estructura.txt con un placeholder:**
 
-### 🖼️ Imagen Empresa
+- Solo necesitas personalizar: `[NOMBRE_ASESORIA]`
+- El resto del contenido está predefinido siguiendo el texto de estructura.txt
 
-- Reemplazar `/haion_landing/imagen-empresa.jpg` con una imagen representativa
+## 🛠️ Sección Servicios
 
-## 🛠️ Sección Servicios (6 servicios disponibles)
+**Servicios fijos basados en servicios+.txt:**
 
-Para cada servicio (SERVICIO_1 hasta SERVICIO_6):
+- 🧾 **Asesoría Fiscal** - "Optimizamos tu situación fiscal con inteligencia, no con trucos."
+- 👷 **Asesoría Laboral** - "Las personas importan. Y el cumplimiento también."
+- 📊 **Asesoría Contable** - "Tus números no son solo cifras: son decisiones."
+- ⚖️ **Asesoría Jurídica** - "Protección legal integral para tu empresa."
+- 🏢 **Asesoría Mercantil** - "Acompañamos el crecimiento de tu empresa."
+- 🔒 **Servicios Especializados** - "Soluciones específicas para necesidades únicas."
 
-- `[SERVICIO_X_TITULO]` - Nombre del servicio
-- `[SERVICIO_X_DESCRIPCION]` - Descripción del servicio
-- `[SERVICIO_X_CARACTERISTICA_1]` - Primera característica
-- `[SERVICIO_X_CARACTERISTICA_2]` - Segunda característica
-- `[SERVICIO_X_CARACTERISTICA_3]` - Tercera característica
+_Los servicios están predefinidos. No requieren personalización._
+
+## 🚀 Sección CTA (Llamada a la Acción)
+
+**Contenido fijo basado en estructura.txt con un placeholder:**
+
+- Título: "¿Buscas una asesoría que te hable con claridad, te entienda y actúe rápido?" (fijo)
+- Subtítulo: "Podemos empezar hoy." (fijo)
+- Solo personalizar: `[TELEFONO_ASESORIA]` - Número de teléfono para el botón de llamada
 
 ## 📞 Sección Contacto
 
 ### Información de Contacto
 
-- `[MENSAJE_CONTACTO_INTRODUCCION]` - Mensaje de introducción para contacto
-- `[EMAIL_EMPRESA]` - Email de contacto de la empresa
+- `[MENSAJE_CONTACTO_INTRODUCCION]` - Mensaje de introducción
+- `[EMAIL_EMPRESA]` - Email de contacto de la asesoría
 - `[TELEFONO_WHATSAPP]` - Número de WhatsApp (formato: 34123456789)
-- `[TEXTO_WHATSAPP]` - Texto para WhatsApp
-- `[URL_LINKEDIN_EMPRESA]` - URL del LinkedIn de la empresa
-- `[TEXTO_LINKEDIN]` - Texto para LinkedIn
-- `[DIRECCION_EMPRESA]` - Dirección física de la empresa
+- `[TEXTO_WHATSAPP]` - Texto descriptivo para WhatsApp
+- `[URL_LINKEDIN_EMPRESA]` - URL del LinkedIn de la asesoría
+- `[TEXTO_LINKEDIN]` - Texto descriptivo para LinkedIn
+- `[DIRECCION_EMPRESA]` - Dirección física de la asesoría
 
-### Formulario de Contacto
+### Formulario de Contacto Simplificado
 
-- `[TITULO_FORMULARIO_CONTACTO]` - Título principal del formulario
-- `[SUBTITULO_FORMULARIO_CONTACTO]` - Subtítulo del formulario
+**El formulario está predefinido según estructura.txt:**
 
-#### Campos del Formulario
+- **Título:** "Puedes enviarnos un email con tu consulta o llamarnos por teléfono" (fijo)
+- **Subtítulo:** "Contacto online" (fijo)
+- **Campos:**
+  - Nombre (obligatorio)
+  - Correo electrónico (obligatorio)
+  - Teléfono (obligatorio)
+  - Mensaje breve (opcional)
+- **Botón:** "Enviar consulta" (fijo)
+- **Mensaje final:** "Te respondemos en menos de 24 horas." (fijo)
 
-- `[ETIQUETA_NOMBRE]` - Etiqueta para campo nombre (ej: "Nombre y apellidos")
-- `[PLACEHOLDER_NOMBRE]` - Placeholder para campo nombre
-- `[ETIQUETA_TELEFONO]` - Etiqueta para campo teléfono
-- `[PLACEHOLDER_TELEFONO]` - Placeholder para campo teléfono
-- `[ETIQUETA_DIRECCION]` - Etiqueta para campo dirección
-- `[PLACEHOLDER_DIRECCION]` - Placeholder para campo dirección
-- `[ETIQUETA_EMAIL]` - Etiqueta para campo email
-- `[PLACEHOLDER_EMAIL]` - Placeholder para campo email
+## 🎨 Estructura Final de la Página
 
-#### Campos Desplegables
+```
+🏠 Hero Section (Pantalla completa con bg.jpg)
+   ├── [NOMBRE_ASESORIA]
+   ├── "Fiscal · Laboral · Contable"
+   ├── "Gestión clara, compromiso real"
+   ├── "Lo importante no es parecer expertos, sino serlo"
+   ├── 2 botones CTA
+   └── Indicador scroll animado
 
-- `[ETIQUETA_TIPO_CLIENTE]` - Etiqueta para tipo de cliente (ej: "¿Eres?")
-- `[OPCION_SELECCIONAR]` - Texto por defecto de selects (ej: "Selecciona una opción")
-- `[TEXTO_OPCION_1]` - Primera opción del tipo de cliente
-- `[VALOR_OPCION_1]` - Valor de la primera opción
-- `[TEXTO_OPCION_2]` - Segunda opción del tipo de cliente
-- `[VALOR_OPCION_2]` - Valor de la segunda opción
-- `[TEXTO_OPCION_3]` - Tercera opción del tipo de cliente
-- `[VALOR_OPCION_3]` - Valor de la tercera opción
+🏢 Sobre Nosotros
+   ├── Descripción de la asesoría (fijo)
+   └── "Por qué elegirnos" (4 puntos fijos)
 
-- `[ETIQUETA_SERVICIO]` - Etiqueta para servicios (ej: "¿Qué servicio necesitas?")
-- `[TEXTO_SERVICIO_1]` - Primer servicio disponible
-- `[VALOR_SERVICIO_1]` - Valor del primer servicio
-- `[TEXTO_SERVICIO_2]` - Segundo servicio disponible
-- `[VALOR_SERVICIO_2]` - Valor del segundo servicio
-- `[TEXTO_SERVICIO_3]` - Tercer servicio disponible
-- `[VALOR_SERVICIO_3]` - Valor del tercer servicio
+🛠️ Servicios (6 servicios predefinidos)
+   ├── Asesoría Fiscal
+   ├── Asesoría Laboral
+   ├── Asesoría Contable
+   ├── Asesoría Jurídica
+   ├── Asesoría Mercantil
+   └── Servicios Especializados
 
-#### Mensaje y Política
+🚀 CTA
+   ├── Mensaje motivador (fijo)
+   └── Botón llamada: [TELEFONO_ASESORIA]
 
-- `[ETIQUETA_MENSAJE]` - Etiqueta para área de mensaje
-- `[PLACEHOLDER_MENSAJE]` - Placeholder para área de mensaje
-- `[TEXTO_POLITICA_PRIVACIDAD]` - Texto antes del enlace de política
-- `[URL_POLITICA_PRIVACIDAD]` - URL a la política de privacidad
-- `[TEXTO_LINK_POLITICA]` - Texto del enlace de política
-- `[TEXTO_BOTON_ENVIAR]` - Texto del botón de enviar
+📞 Contacto
+   ├── Información de contacto (personalizable)
+   └── Formulario simple (fijo)
+```
 
-## 🎨 Personalización Adicional
+## 📝 **Campos que DEBES personalizar:**
 
-### Colores
+### ✅ **Obligatorios (mínimo):**
 
-La página usa una paleta de colores predefinida, pero puedes modificar:
+1. `[NOMBRE_ASESORIA]` - Nombre de la asesoría
+2. `[EMAIL_EMPRESA]` - Email de contacto
+3. `[TELEFONO_ASESORIA]` - Teléfono principal
+4. `[DIRECCION_EMPRESA]` - Dirección física
 
-- Los colores de cada tarjeta de servicio están diferenciados
-- El esquema soporta modo claro y oscuro automáticamente
+### 🔄 **Opcionales:**
 
-### Imágenes a reemplazar:
+5. `[TELEFONO_WHATSAPP]` - WhatsApp (si es diferente del principal)
+6. `[URL_LINKEDIN_EMPRESA]` - LinkedIn de la empresa
+7. `[MENSAJE_CONTACTO_INTRODUCCION]` - Mensaje personalizado de contacto
 
-1. `/haion_landing/logo-empresa.jpg` - Logo para el hero
-2. `/haion_landing/imagen-empresa.jpg` - Imagen para "Sobre Nosotros"
+## 🎯 **Ventajas de esta estructura:**
 
-## 📝 Notas para el Cliente
+- ✅ **Contenido profesional** ya redactado
+- ✅ **Estructura probada** basada en Ilai Asesores
+- ✅ **Servicios específicos** para asesorías
+- ✅ **Formulario simple** y efectivo
+- ✅ **Mínima personalización** requerida
+- ✅ **Testimonios preparados** para futuro uso (comentados)
 
-1. **Servicios**: Puedes usar los 6 servicios completos o eliminar los que no necesites
-2. **Textos**: Mantén los textos concisos para mejor experiencia visual
-3. **Imágenes**: Usa imágenes de alta calidad (recomendado: formato JPG/PNG)
-4. **Email y teléfono**: Verifica que funcionan correctamente antes de publicar
+## 🚀 **Para empezar:**
 
-## 🚀 Después de llenar los placeholders
+1. Rellena los **4 campos obligatorios** mínimos
+2. Personaliza los opcionales según necesites
+3. ¡Tu página está lista para funcionar!
 
-Una vez que tengas toda la información:
-
-1. Reemplaza todos los placeholders marcados con `[PLACEHOLDER]`
-2. Sube las imágenes al directorio `/public/haion_landing/`
-3. Verifica que todos los enlaces funcionen
-4. Prueba la página en dispositivos móviles y escritorio
+La página está diseñada para ser funcional desde el primer momento con mínima configuración.

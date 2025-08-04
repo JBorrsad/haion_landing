@@ -3,24 +3,14 @@ import ThemeToggle from "./ThemeToggle.astro"
 
 const navItems = [
   {
-    title: "Experiencia",
-    label: "experiencia",
-    url: "#experiencia",
+    title: "Sobre nosotros",
+    label: "sobre-nosotros",
+    url: "#sobre-nosotros",
   },
   {
-    title: "Formación",
-    label: "formacion",
-    url: "#formacion",
-  },
-  {
-    title: "Proyectos",
-    label: "proyectos",
-    url: "#proyectos",
-  },
-  {
-    title: "Sobre mí",
-    label: "sobre-mi",
-    url: "#sobre-mi",
+    title: "Servicios",
+    label: "servicios",
+    url: "#servicios",
   },
   {
     title: "Contacto",
@@ -34,7 +24,7 @@ const navItems = [
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+    class="flex px-3 text-sm font-medium rounded-full text-white dark:text-white justify-center items-center bg-black/30 backdrop-blur-sm border border-white/20"
   >
     {
       navItems.map((link) => (
@@ -124,15 +114,33 @@ const navItems = [
   }
 
   nav {
-    @apply dark:bg-gray-800/90 bg-white/50;
+    @apply bg-black/30 backdrop-blur-sm;
   }
 
   @keyframes nav-shadown {
-    0% {
-      @apply dark:bg-gray-800/0 bg-white/0;
+    from {
+      @apply bg-black/30 backdrop-blur-sm border-white/20;
+      color: white;
     }
     to {
-      @apply shadow-lg ring-1 backdrop-blur ring-white/10;
+      @apply shadow-lg ring-1 backdrop-blur-md bg-white/95 border-gray-200;
+      color: rgb(75, 85, 99);
+      padding: 0.25rem 0.75rem;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @keyframes nav-shadown {
+      from {
+        @apply bg-black/30 backdrop-blur-sm border-white/20;
+        color: white;
+      }
+      to {
+        @apply shadow-lg ring-1 backdrop-blur-md bg-gray-800/95 border-gray-600;
+        color: rgb(229, 231, 235);
+        padding: 0.25rem 0.75rem;
+      }
     }
   }
 </style>
+
