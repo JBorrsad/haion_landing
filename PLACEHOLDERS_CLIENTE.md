@@ -51,6 +51,8 @@ Para cada servicio (SERVICIO_1 hasta SERVICIO_6):
 
 ## 📞 Sección Contacto
 
+### Información de Contacto
+
 - `[MENSAJE_CONTACTO_INTRODUCCION]` - Mensaje de introducción para contacto
 - `[EMAIL_EMPRESA]` - Email de contacto de la empresa
 - `[TELEFONO_WHATSAPP]` - Número de WhatsApp (formato: 34123456789)
@@ -58,9 +60,50 @@ Para cada servicio (SERVICIO_1 hasta SERVICIO_6):
 - `[URL_LINKEDIN_EMPRESA]` - URL del LinkedIn de la empresa
 - `[TEXTO_LINKEDIN]` - Texto para LinkedIn
 - `[DIRECCION_EMPRESA]` - Dirección física de la empresa
-- `[TITULO_LLAMADA_ACCION]` - Título de la sección final
-- `[MENSAJE_LLAMADA_ACCION]` - Mensaje de la sección final
-- `[TEXTO_BOTON_CONTACTO]` - Texto del botón de contacto
+
+### Formulario de Contacto
+
+- `[TITULO_FORMULARIO_CONTACTO]` - Título principal del formulario
+- `[SUBTITULO_FORMULARIO_CONTACTO]` - Subtítulo del formulario
+
+#### Campos del Formulario
+
+- `[ETIQUETA_NOMBRE]` - Etiqueta para campo nombre (ej: "Nombre y apellidos")
+- `[PLACEHOLDER_NOMBRE]` - Placeholder para campo nombre
+- `[ETIQUETA_TELEFONO]` - Etiqueta para campo teléfono
+- `[PLACEHOLDER_TELEFONO]` - Placeholder para campo teléfono
+- `[ETIQUETA_DIRECCION]` - Etiqueta para campo dirección
+- `[PLACEHOLDER_DIRECCION]` - Placeholder para campo dirección
+- `[ETIQUETA_EMAIL]` - Etiqueta para campo email
+- `[PLACEHOLDER_EMAIL]` - Placeholder para campo email
+
+#### Campos Desplegables
+
+- `[ETIQUETA_TIPO_CLIENTE]` - Etiqueta para tipo de cliente (ej: "¿Eres?")
+- `[OPCION_SELECCIONAR]` - Texto por defecto de selects (ej: "Selecciona una opción")
+- `[TEXTO_OPCION_1]` - Primera opción del tipo de cliente
+- `[VALOR_OPCION_1]` - Valor de la primera opción
+- `[TEXTO_OPCION_2]` - Segunda opción del tipo de cliente
+- `[VALOR_OPCION_2]` - Valor de la segunda opción
+- `[TEXTO_OPCION_3]` - Tercera opción del tipo de cliente
+- `[VALOR_OPCION_3]` - Valor de la tercera opción
+
+- `[ETIQUETA_SERVICIO]` - Etiqueta para servicios (ej: "¿Qué servicio necesitas?")
+- `[TEXTO_SERVICIO_1]` - Primer servicio disponible
+- `[VALOR_SERVICIO_1]` - Valor del primer servicio
+- `[TEXTO_SERVICIO_2]` - Segundo servicio disponible
+- `[VALOR_SERVICIO_2]` - Valor del segundo servicio
+- `[TEXTO_SERVICIO_3]` - Tercer servicio disponible
+- `[VALOR_SERVICIO_3]` - Valor del tercer servicio
+
+#### Mensaje y Política
+
+- `[ETIQUETA_MENSAJE]` - Etiqueta para área de mensaje
+- `[PLACEHOLDER_MENSAJE]` - Placeholder para área de mensaje
+- `[TEXTO_POLITICA_PRIVACIDAD]` - Texto antes del enlace de política
+- `[URL_POLITICA_PRIVACIDAD]` - URL a la política de privacidad
+- `[TEXTO_LINK_POLITICA]` - Texto del enlace de política
+- `[TEXTO_BOTON_ENVIAR]` - Texto del botón de enviar
 
 ## 🎨 Personalización Adicional
 
