@@ -1,7 +1,13 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro"
+import Logo from "./Logo.astro"
 
 const navItems = [
+  {
+    title: "Inicio",
+    label: "inicio",
+    url: "#",
+  },
   {
     title: "Sobre nosotros",
     label: "sobre-nosotros",
@@ -21,10 +27,18 @@ const navItems = [
 ---
 
 <header
-  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
+  class="fixed top-0 z-50 flex items-center justify-center w-full mx-auto mt-2"
 >
+  <!-- Logo en la esquina izquierda -->
+  <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+    <a href="#" class="flex items-center" id="logo-link">
+      <Logo class="w-24 h-auto hover:text-blue-300 transition-colors" />
+    </a>
+  </div>
+  
+  <!-- Navegación centrada -->
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-white dark:text-white justify-center items-center bg-black/30 backdrop-blur-sm border border-white/20"
+    class="flex px-3 text-sm font-medium rounded-full text-white dark:text-white justify-center items-center"
   >
     {
       navItems.map((link) => (
@@ -52,6 +66,16 @@ const navItems = [
       const target = e.target as HTMLAnchorElement
       const sectionId = target.getAttribute("data-section")
       
+      // Manejar clic en "Inicio"
+      if (sectionId === "inicio") {
+        e.preventDefault()
+        window.scrollTo({ 
+          top: 0, 
+          behavior: "smooth" 
+        })
+        return
+      }
+      
       if (sectionId && sectionId !== "contacto") {
         e.preventDefault()
         const section = document.getElementById(sectionId)
@@ -62,6 +86,18 @@ const navItems = [
           })
         }
       }
+    }
+
+    // Manejar clic en el logo
+    const logoLink = document.getElementById("logo-link")
+    if (logoLink) {
+      logoLink.addEventListener("click", (e) => {
+        e.preventDefault()
+        window.scrollTo({ 
+          top: 0, 
+          behavior: "smooth" 
+        })
+      })
     }
 
     // Agregar event listeners a los enlaces de navegación
@@ -114,31 +150,42 @@ const navItems = [
   }
 
   nav {
-    @apply bg-black/30 backdrop-blur-sm;
+    @apply dark:bg-gray-800/90 bg-white/50;
   }
 
   @keyframes nav-shadown {
-    from {
-      @apply bg-black/30 backdrop-blur-sm border-white/20;
+    0% {
+      @apply dark:bg-gray-800/0 bg-white/0;
       color: white;
     }
     to {
-      @apply shadow-lg ring-1 backdrop-blur-md bg-white/95 border-gray-200;
+      @apply shadow-lg ring-1 backdrop-blur ring-white/10 text-gray-600 dark:text-gray-200;
+    }
+  }
+
+  /* Animación para el logo */
+  #logo-link {
+    animation: logo-scroll 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes logo-scroll {
+    from {
+      color: white;
+    }
+    to {
       color: rgb(75, 85, 99);
-      padding: 0.25rem 0.75rem;
     }
   }
 
   @media (prefers-color-scheme: dark) {
-    @keyframes nav-shadown {
+    @keyframes logo-scroll {
       from {
-        @apply bg-black/30 backdrop-blur-sm border-white/20;
         color: white;
       }
       to {
-        @apply shadow-lg ring-1 backdrop-blur-md bg-gray-800/95 border-gray-600;
-        color: rgb(229, 231, 235);
-        padding: 0.25rem 0.75rem;
+        color: rgb(156, 163, 175);
       }
     }
   }

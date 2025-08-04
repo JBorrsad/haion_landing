@@ -1,10 +1,11 @@
-# Guía de Placeholders para Asesoría - Página Web
+# Guía de Placeholders para Haion Consulting - Página Web
 
-Esta página web está preparada para una asesoría fiscal, laboral y contable. Aquí tienes todos los campos que necesitas personalizar:
+Esta página web está preparada para **Haion Consulting** - asesoría fiscal, laboral y contable. El nombre de la empresa ya está configurado en toda la página.
 
-## 📄 Página Principal (index.astro)
+## 📄 Página Principal
 
-- `[NOMBRE_ASESORIA]` - Nombre de la asesoría (ej: "Asesoría García & Asociados")
+✅ **Nombre de la empresa:** **Haion Consulting** (ya configurado)
+✅ **Logo SVG:** Creado y posicionado en la esquina superior izquierda
 
 ## 🦸 Sección Hero (Encabezado principal)
 
@@ -12,7 +13,7 @@ Esta página web está preparada para una asesoría fiscal, laboral y contable. 
 
 - **Imagen de fondo:** `bg.jpg` (ya configurada)
 - **Overlay oscuro** para legibilidad del texto
-- **Título:** `[NOMBRE_ASESORIA]`
+- **Título:** "Haion Consulting" (ya configurado)
 - **Subtítulo:** "Fiscal · Laboral · Contable" (fijo)
 - **Eslogan:** "Gestión clara, compromiso real." (fijo)
 - **Descripción:** "Lo importante no es parecer expertos, sino serlo." (fijo)
@@ -21,10 +22,10 @@ Esta página web está preparada para una asesoría fiscal, laboral y contable. 
 
 ## 🏢 Sección "Sobre Nosotros"
 
-**Contenido fijo basado en estructura.txt con un placeholder:**
+**Contenido fijo basado en estructura.txt:**
 
-- Solo necesitas personalizar: `[NOMBRE_ASESORIA]`
-- El resto del contenido está predefinido siguiendo el texto de estructura.txt
+✅ **Empresa:** "Haion Consulting" (ya configurado)
+✅ **Texto completo** predefinido siguiendo estructura.txt
 
 ## 🛠️ Sección Servicios
 
@@ -77,7 +78,7 @@ _Los servicios están predefinidos. No requieren personalización._
 
 ```
 🏠 Hero Section (Pantalla completa con bg.jpg)
-   ├── [NOMBRE_ASESORIA]
+   ├── "Haion Consulting" (ya configurado)
    ├── "Fiscal · Laboral · Contable"
    ├── "Gestión clara, compromiso real"
    ├── "Lo importante no es parecer expertos, sino serlo"
@@ -109,10 +110,9 @@ _Los servicios están predefinidos. No requieren personalización._
 
 ### ✅ **Obligatorios (mínimo):**
 
-1. `[NOMBRE_ASESORIA]` - Nombre de la asesoría
-2. `[EMAIL_EMPRESA]` - Email de contacto
-3. `[TELEFONO_ASESORIA]` - Teléfono principal
-4. `[DIRECCION_EMPRESA]` - Dirección física
+1. `[EMAIL_EMPRESA]` - Email de contacto
+2. `[TELEFONO_ASESORIA]` - Teléfono principal
+3. `[DIRECCION_EMPRESA]` - Dirección física
 
 ### 🔄 **Opcionales:**
 
@@ -131,8 +131,15 @@ _Los servicios están predefinidos. No requieren personalización._
 
 ## 🚀 **Para empezar:**
 
-1. Rellena los **4 campos obligatorios** mínimos
+1. Rellena los **3 campos obligatorios** mínimos
 2. Personaliza los opcionales según necesites
 3. ¡Tu página está lista para funcionar!
 
-La página está diseñada para ser funcional desde el primer momento con mínima configuración.
+La página está diseñada para **Haion Consulting** y es funcional desde el primer momento con mínima configuración.
+
+## ✨ **Nuevas características implementadas:**
+
+- ✅ **Logo SVG personalizado** para Haion Consulting
+- ✅ **Menú actualizado** con "Inicio" como primer elemento
+- ✅ **Branding completo** - nombre configurado en toda la página
+- ✅ **Header profesional** con logo en esquina superior izquierda
