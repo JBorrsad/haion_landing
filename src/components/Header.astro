@@ -38,7 +38,7 @@ const navItems = [
   
   <!-- Navegación centrada -->
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-white dark:text-white justify-center items-center"
+    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
   >
     {
       navItems.map((link) => (
@@ -156,10 +156,22 @@ const navItems = [
   @keyframes nav-shadown {
     0% {
       @apply dark:bg-gray-800/0 bg-white/0;
-      color: white;
     }
     to {
-      @apply shadow-lg ring-1 backdrop-blur ring-white/10 text-gray-600 dark:text-gray-200;
+      @apply shadow-lg ring-1 backdrop-blur ring-white/10;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @keyframes nav-shadown {
+      0% {
+        @apply bg-gray-800/0;
+        color: white;
+      }
+      to {
+        @apply shadow-lg ring-1 backdrop-blur ring-gray-600/20 bg-gray-800/90;
+        color: white;
+      }
     }
   }
 
