@@ -29,8 +29,8 @@ const navItems = [
 <header
   class="fixed top-0 z-50 flex items-center justify-center w-full mx-auto mt-2"
 >
-  <!-- Logo en la esquina izquierda -->
-  <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+  <!-- Logo en la esquina izquierda (solo desktop) -->
+  <div class="hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2">
     <a href="#" class="flex items-center" id="logo-link">
       <Logo class="w-24 h-auto hover:text-blue-300 transition-colors" />
     </a>
@@ -38,12 +38,12 @@ const navItems = [
   
   <!-- Navegación centrada -->
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+    class="flex px-2 md:px-3 text-xs md:text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center space-x-0"
   >
     {
       navItems.map((link) => (
         <a
-          class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500"
+          class="relative block px-1 md:px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500 text-center min-w-0 flex-shrink-0"
           aria-label={link.label}
           href={link.url}
           data-section={link.label}
