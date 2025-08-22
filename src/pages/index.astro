@@ -1,13 +1,9 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 
-import AboutCompany from "@/components/AboutCompany.astro"
-import Services from "@/components/Services.astro"
-import Contact from "@/components/Contact.astro"
+import SobreNosotros from "@/components/SobreNosotros.astro"
+import ServicesSimple from "@/components/ServicesSimple.astro"
 import CTA from "@/components/CTA.astro"
-import MailIcon from "@/components/icons/Mail.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
@@ -26,18 +22,16 @@ import TitleSection from "@/components/TitleSection.astro"
       <div class="space-y-24">
         <SectionContainer id="sobre-nosotros">
           <TitleSection>
-            <ProfileCheck class="size-8" />
             Sobre nosotros
           </TitleSection>
-          <AboutCompany />
+          <SobreNosotros />
         </SectionContainer>
 
         <SectionContainer id="servicios">
           <TitleSection>
-            <Briefcase class="size-8" />
             Nuestras áreas de especialización
           </TitleSection>
-          <Services />
+          <ServicesSimple />
         </SectionContainer>
 
        
@@ -57,14 +51,6 @@ import TitleSection from "@/components/TitleSection.astro"
 
         <SectionContainer>
           <CTA />
-        </SectionContainer>
-
-        <SectionContainer id="contacto">
-          <TitleSection>
-            <MailIcon class="size-8" />
-            Contacto
-          </TitleSection>
-          <Contact />
         </SectionContainer>
       </div>
     </div>

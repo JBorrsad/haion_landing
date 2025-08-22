@@ -1,0 +1,60 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import TitleSection from "@/components/TitleSection.astro"
+---
+
+<Layout
+  title="Asesoría Contable - Haion Consulting"
+  description="Servicios de asesoría contable integral. Contabilidad, balances, cuentas anuales y gestión fiscal."
+>
+  <main>
+    <div class="px-4 pt-32 pb-24">
+      <div class="max-w-4xl mx-auto">
+        <SectionContainer>
+          <TitleSection>
+            Contable
+          </TitleSection>
+          
+          <div class="prose prose-lg max-w-none dark:prose-invert">
+            <p class="text-gray-600 dark:text-gray-400 mb-8" style="font-size: 22px;">
+              Aquí va el texto placeholder de la página Contable.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+                <h3 class="font-dm-serif font-normal text-gray-900 dark:text-white mb-4" style="font-size: 25px;">
+                  Contabilidad general
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400" style="font-size: 17px;">
+                  Aquí va el texto placeholder de contabilidad general.
+                </p>
+              </div>
+              
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+                <h3 class="font-dm-serif font-normal text-gray-900 dark:text-white mb-4" style="font-size: 25px;">
+                  Balances y cuentas anuales
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400" style="font-size: 17px;">
+                  Aquí va el texto placeholder de balances y cuentas anuales.
+                </p>
+              </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+              <a
+                href="/haion_landing/contacto"
+                class="inline-flex items-center gap-2 px-8 py-4 bg-yellow-200 text-gray-800 hover:bg-yellow-300 font-semibold rounded-lg transition-colors"
+              >
+                Solicita información
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </SectionContainer>
+      </div>
+    </div>
+  </main>
+</Layout>
