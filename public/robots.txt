@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://haion_landing.github.io/haion_landing/sitemap.xml
+Sitemap: https://jborrsad.github.io/haion_landing/sitemap.xml
