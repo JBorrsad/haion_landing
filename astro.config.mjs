@@ -6,6 +6,6 @@ import robotsTxt from "astro-robots-txt";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), robotsTxt()],
-  site: "https://jborrsad.github.io",
+  site: "https://haion_landing.github.io",
   base: "/haion_landing",
 });
