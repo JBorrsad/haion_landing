@@ -1,135 +1,65 @@
 ---
+/* No cambies props. Este componente solo imprime contenido de "Sobre nosotros". */
 ---
 
-<div class="max-w-4xl mx-auto">
-  <!-- Descripción general -->
-  <div class="text-left mb-8">
-    <div class="lead max-w-4xl">
-      <p class="mb-4">
-        En Haion Consulting creemos que asesorar es anticiparse, orientar y acompañar.
-        Unimos experiencia técnica y una visión moderna para ofrecerte un servicio cercano, claro y eficaz.
-      </p>
-      
-      <p class="mb-4 font-medium">
-        Automatizamos lo repetitivo y ganamos tiempo para lo importante:
-      </p>
-      
-      <ul class="mb-4 ml-6 space-y-1">
-        <li>Resolver con claridad</li>
-        <li>Comunicar con precisión</li>
-        <li>Acompañarte con rigor</li>
-      </ul>
-      
-      <p class="mb-4">
-        Trabajamos con empresas, autónomos y profesionales que buscan un aliado de confianza, no un simple gestor.
-      </p>
+<div class="max-w-6xl mx-auto">
+  <!-- Intro: 2 columnas -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center mb-12 md:mb-16">
+    <!-- Columna texto -->
+    <div>
+      <h2 class="h2 mb-6">Sobre nosotros</h2>
+
+      <div class="text-body">
+        <p class="lead mb-4">
+          En Haion Consulting creemos que asesorar es anticiparse, orientar y acompañar.
+          Unimos experiencia técnica y una visión moderna para ofrecerte un servicio cercano, claro y eficaz.
+        </p>
+
+        <p class="lead mb-3 font-medium">Automatizamos lo repetitivo y ganamos tiempo para lo importante:</p>
+        <ul class="text-body ml-6 list-disc space-y-1 mb-4">
+          <li>Resolver con claridad</li>
+          <li>Comunicar con precisión</li>
+          <li>Acompañarte con rigor</li>
+        </ul>
+
+        <p class="lead mb-2">Trabajamos con empresas, autónomos y profesionales que buscan un aliado de confianza.</p>
+        <p class="lead font-medium">Nuestro objetivo: tu tranquilidad y satisfacción.</p>
+      </div>
+    </div>
+
+    <!-- Columna imagen (usa un placeholder local) -->
+    <div class="w-full">
+      <img
+        src="/haion_landing/img/sobrenosotros.png"
+        alt="Equipo de trabajo de Haion Consulting"
+        class="w-full h-auto rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm object-cover"
+      />
     </div>
   </div>
 
-  <!-- Descripción principal -->
-  <div class="text-left mb-8">
-    <p class="lead font-medium">
-      Nuestro objetivo: tu tranquilidad y satisfacción.
-    </p>
-  </div>
-
-  <!-- Grid de Misión, Visión, Valores -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-    
-    <!-- Misión -->
-    <div class="text-left">
-      <h3 class="h3 mb-4">
-        Misión
-      </h3>
-      <p class="lead">
+  <!-- Misión / Visión / Valores: 3 tarjetas tipográficas -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <article class="card p-6">
+      <h3 class="h3 mb-3">Misión</h3>
+      <p class="text-body">
         Acompañarte en la gestión de tu negocio con soluciones claras, rápidas y personalizadas.
       </p>
-    </div>
+    </article>
 
-    <!-- Visión -->
-    <div class="text-left">
-      <h3 class="h3 mb-4">
-        Visión
-      </h3>
-      <p class="lead">
+    <article class="card p-6">
+      <h3 class="h3 mb-3">Visión</h3>
+      <p class="text-body">
         Que te centres en hacer crecer tu empresa, con la confianza de contar con un equipo experto a tu lado.
       </p>
-    </div>
+    </article>
 
-    <!-- Valores -->
-    <div class="text-left">
-      <h3 class="h3 mb-4">
-        Valores
-      </h3>
-        <div class="lead">
-        <ul class="space-y-2 list-none">
-          <li><span class="font-medium text-yellow-600 dark:text-yellow-400">Honestidad:</span> decimos la verdad, no lo que conviene.</li>
-          <li><span class="font-medium text-yellow-600 dark:text-yellow-400">Compromiso:</span> siempre disponibles cuando nos necesitas.</li>
-          <li><span class="font-medium text-yellow-600 dark:text-yellow-400">Empatía:</span> entendemos tus retos porque también hemos estado ahí.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Sección Por qué elegirnos -->
-  <div class="mt-12 p-8 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl border border-yellow-200 dark:border-yellow-700 hover:shadow-lg transition-shadow">
-    <h3 class="h3 mb-8 text-center">
-      Por qué elegirnos
-    </h3>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-6 h-6 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mt-1">
-          <svg class="w-3 h-3 text-yellow-600 dark:text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-          </svg>
-        </div>
-        <div>
-          <p class="lead">
-            Lenguaje claro, sin tecnicismos innecesarios
-          </p>
-        </div>
-      </div>
-
-      <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-6 h-6 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mt-1">
-          <svg class="w-3 h-3 text-yellow-600 dark:text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-          </svg>
-        </div>
-        <div>
-          <p class="lead">
-            Tecnología que ahorra tiempo, sin perder el trato humano
-          </p>
-        </div>
-      </div>
-
-      <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-6 h-6 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mt-1">
-          <svg class="w-3 h-3 text-yellow-600 dark:text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-          </svg>
-        </div>
-        <div>
-          <p class="lead">
-            Respuestas rápidas y explicaciones sencillas
-          </p>
-        </div>
-      </div>
-
-      <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-6 h-6 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mt-1">
-          <svg class="w-3 h-3 text-yellow-600 dark:text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-          </svg>
-        </div>
-        <div>
-          <p class="lead">
-            No solo llevamos tu contabilidad: te ayudamos a entender y optimizar tu negocio
-          </p>
-        </div>
-      </div>
-    </div>
+    <article class="card p-6">
+      <h3 class="h3 mb-4">Valores</h3>
+      <ul class="text-body space-y-2">
+        <li><span class="font-medium text-yellow-700 dark:text-yellow-400">Honestidad:</span> decimos la verdad, no lo que conviene.</li>
+        <li><span class="font-medium text-yellow-700 dark:text-yellow-400">Compromiso:</span> siempre disponibles cuando nos necesitas.</li>
+        <li><span class="font-medium text-yellow-700 dark:text-yellow-400">Empatía:</span> entendemos tus retos porque también hemos estado ahí.</li>
+      </ul>
+    </article>
   </div>
 </div>

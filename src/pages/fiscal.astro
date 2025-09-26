@@ -9,9 +9,7 @@ import TitleSection from "@/components/TitleSection.astro"
   description="Servicios de asesoría fiscal integral. Optimización fiscal, declaraciones de impuestos y representación ante Hacienda."
 >
   <main>
-    <div class="px-4 pt-32 pb-24">
-      <div class="max-w-6xl mx-auto">
-        <SectionContainer>
+    <SectionContainer variant="plain">
           <!-- Encabezado Principal -->
           <div class="text-center mb-16">
             <h1 class="h1 mb-6">
@@ -21,14 +19,14 @@ import TitleSection from "@/components/TitleSection.astro"
 
           <!-- Introducción -->
           <div class="mb-16">
-            <p class="lead max-w-4xl mx-auto text-center">
+            <p class="text-body max-w-4xl mx-auto text-center text-base sm:text-lg leading-relaxed">
               La gestión fiscal es uno de los pilares más importantes para la salud financiera de tu empresa. En Haion Consulting, no solo nos ocupamos de tus declaraciones y pagos: ofrecemos una planificación fiscal estratégica que maximiza tus beneficios y minimiza tus riesgos, con un enfoque totalmente adaptado a las necesidades de tu negocio.
             </p>
           </div>
 
           <!-- Beneficios de una buena asesoría fiscal -->
           <div class="mb-16">
-            <h2 class="h2 mb-8 text-center">
+            <h2 class="h2 mb-8 md:mb-10 text-center">
               Beneficios de una buena asesoría fiscal
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -77,42 +75,42 @@ import TitleSection from "@/components/TitleSection.astro"
 
           <!-- Servicios principales -->
           <div class="mb-16">
-            <h2 class="h2 mb-8 text-center">
+            <h2 class="h2 mb-8 md:mb-10 text-center">
               Servicios principales
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-                <h3 class="h3 mb-4">
+                <h3 class="h3 mb-6">
                   Declaración y liquidación de impuestos
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   Te ayudamos con la presentación de tus impuestos (IVA, IRPF, Impuesto de Sociedades) asegurando que se pague lo justo.
                 </p>
               </div>
               
               <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-                <h3 class="h3 mb-4">
+                <h3 class="h3 mb-6">
                   Planificación fiscal
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   Identificamos oportunidades fiscales para optimizar tu carga impositiva a corto, medio y largo plazo.
                 </p>
               </div>
 
               <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-                <h3 class="h3 mb-4">
+                <h3 class="h3 mb-6">
                   Representación ante Hacienda
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   Defendemos tu empresa ante cualquier consulta o inspección de la Agencia Tributaria.
                 </p>
               </div>
 
               <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
-                <h3 class="h3 mb-4">
+                <h3 class="h3 mb-6">
                   Asesoría en declaraciones trimestrales y anuales
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   Gestionamos todas tus declaraciones fiscales para que no te preocupes por nada.
                 </p>
               </div>
@@ -136,8 +134,6 @@ import TitleSection from "@/components/TitleSection.astro"
               </a>
             </div>
           </div>
-        </SectionContainer>
-      </div>
-    </div>
+    </SectionContainer>
   </main>
 </Layout>

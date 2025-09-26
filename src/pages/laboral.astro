@@ -9,9 +9,7 @@ import TitleSection from "@/components/TitleSection.astro"
   description="Servicios de asesoría laboral integral. Gestión de nóminas, contratos de trabajo y cumplimiento normativo laboral."
 >
   <main>
-    <div class="px-4 pt-32 pb-24">
-      <div class="max-w-6xl mx-auto">
-        <SectionContainer>
+    <SectionContainer variant="plain">
           <!-- Encabezado Principal -->
           <div class="text-center mb-16">
             <h1 class="h1 mb-6">
@@ -21,14 +19,14 @@ import TitleSection from "@/components/TitleSection.astro"
 
           <!-- Introducción -->
           <div class="mb-16">
-            <p class="lead max-w-4xl mx-auto text-center">
+            <p class="text-body max-w-4xl mx-auto text-center text-base sm:text-lg leading-relaxed">
               La gestión laboral no solo se trata de cumplir con la legislación, sino de crear un ambiente de trabajo sano, legal y eficiente. Te ayudamos a gestionar tu equipo de manera que puedas centrarte en lo que mejor sabes hacer: crecer tu negocio.
             </p>
           </div>
 
           <!-- Beneficios de una buena asesoría laboral -->
           <div class="mb-16">
-            <h2 class="h2 mb-8 text-center">
+            <h2 class="h2 mb-8 md:mb-10 text-center">
               Beneficios de una buena asesoría laboral
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -77,7 +75,7 @@ import TitleSection from "@/components/TitleSection.astro"
 
           <!-- Servicios principales -->
           <div class="mb-16">
-            <h2 class="h2 mb-8 text-center">
+            <h2 class="h2 mb-8 md:mb-10 text-center">
               Servicios principales
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -85,7 +83,7 @@ import TitleSection from "@/components/TitleSection.astro"
                 <h3 class="h3 mb-4">
                   Gestión de nóminas y seguros sociales
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   Nos ocupamos de que tus empleados reciban sus nóminas a tiempo y de acuerdo con la legislación.
                 </p>
               </div>
@@ -94,7 +92,7 @@ import TitleSection from "@/components/TitleSection.astro"
                 <h3 class="h3 mb-4">
                   Contrataciones y despidos
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   Te asesoramos en la contratación y despido de empleados, asegurando que todo el proceso sea legal y eficiente.
                 </p>
               </div>
@@ -103,7 +101,7 @@ import TitleSection from "@/components/TitleSection.astro"
                 <h3 class="h3 mb-4">
                   Defensa ante inspecciones de trabajo
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   En caso de ser inspeccionado, te representamos ante las autoridades laborales.
                 </p>
               </div>
@@ -112,7 +110,7 @@ import TitleSection from "@/components/TitleSection.astro"
                 <h3 class="h3 mb-4">
                   Convenios colectivos
                 </h3>
-                <p class="lead">
+                <p class="text-body">
                   Asesoramos sobre los convenios aplicables a tu empresa y cómo negociar las mejores condiciones para tus empleados.
                 </p>
               </div>
@@ -136,8 +134,6 @@ import TitleSection from "@/components/TitleSection.astro"
               </a>
             </div>
           </div>
-        </SectionContainer>
-      </div>
-    </div>
+    </SectionContainer>
   </main>
 </Layout>
