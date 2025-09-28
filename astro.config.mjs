@@ -9,7 +9,7 @@ export default defineConfig({
   trailingSlash: "ignore", // acepta ambos: /fiscal y /fiscal/
   integrations: [
     tailwind(),
-    sitemap(), // generará /sitemap-index.xml
+    sitemap(), // genera sitemap-index.xml + sitemap-0.xml
     robotsTxt({
       policy: [{ userAgent: "*", allow: "/" }],
       sitemap: "https://jborrsad.github.io/haion_landing/sitemap-index.xml",

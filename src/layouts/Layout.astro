@@ -10,9 +10,11 @@ import { ViewTransitions } from "astro:transitions"
 interface Props {
   title: string
   description: string
+  canonical?: string
 }
 
-const { description, title } = Astro.props
+const { description, title, canonical } = Astro.props
+const currentUrl = canonical || `https://jborrsad.github.io/haion_landing${Astro.url.pathname}`
 ---
 
 <!doctype html>
@@ -21,6 +23,8 @@ const { description, title } = Astro.props
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={currentUrl} />
     <link rel="icon" type="image/svg+xml" href="/haion_landing/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
