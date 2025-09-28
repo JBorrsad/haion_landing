@@ -6,18 +6,15 @@
   /* Headings con DM Serif */
   .h1 {
     font-family: "DM Serif Display", serif;
-    @apply font-normal text-gray-900 dark:text-white
-           text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
+    @apply font-normal text-gray-900 dark:text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
   }
   .h2 {
     font-family: "DM Serif Display", serif;
-    @apply font-normal text-gray-900 dark:text-white
-           text-3xl sm:text-4xl md:text-5xl;
+    @apply font-normal text-gray-900 dark:text-white text-3xl sm:text-4xl md:text-5xl;
   }
   .h3 {
     font-family: "DM Serif Display", serif;
-    @apply font-normal text-gray-900 dark:text-white
-           text-2xl sm:text-3xl;
+    @apply font-normal text-gray-900 dark:text-white text-2xl sm:text-3xl;
   }
 
   /* Texto base */
@@ -41,8 +38,6 @@
 
   /* Tarjetas de servicio (home) */
   .service-card {
-    @apply bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-xl
-           border border-yellow-200 dark:border-yellow-700
-           hover:shadow-lg transition-shadow;
+    @apply bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-xl border border-yellow-200 dark:border-yellow-700 hover:shadow-lg transition-shadow;
   }
 }

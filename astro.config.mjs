@@ -1,11 +1,15 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-
+import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), robotsTxt()],
-  site: "https://jborrsad.github.io",
+  site: "https://jborrsad.github.io/haion_landing/", // barra final
   base: "/haion_landing",
+  trailingSlash: "ignore", // acepta ambos: /fiscal y /fiscal/
+  integrations: [
+    tailwind(),
+    sitemap(), // generará /sitemap-index.xml
+    robotsTxt(),
+  ],
 });
