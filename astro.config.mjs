@@ -6,7 +6,7 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: "https://jborrsad.github.io/haion_landing/", // barra final
   base: "/haion_landing",
-  trailingSlash: "ignore", // acepta ambos: /fiscal y /fiscal/
+  trailingSlash: "never", // URLs sin barra final para GSC
   integrations: [
     tailwind(),
     sitemap(), // genera sitemap-index.xml + sitemap-0.xml

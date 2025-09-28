@@ -38,6 +38,16 @@ jobs:
       - name: Build with Astro
         run: npm run build
 
+      - name: Verify sitemap files
+        run: |
+          echo "=== Checking for sitemap files ==="
+          ls -la dist/
+          echo "=== Content of robots.txt ==="
+          cat dist/robots.txt
+          echo "=== Sitemap index exists? ==="
+          test -f dist/sitemap-index.xml && echo "✅ sitemap-index.xml found" || echo "❌ sitemap-index.xml missing"
+          test -f dist/sitemap-0.xml && echo "✅ sitemap-0.xml found" || echo "❌ sitemap-0.xml missing"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
