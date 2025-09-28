@@ -5,13 +5,13 @@ import robotsTxt from "astro-robots-txt";
 import vercel from "@astrojs/vercel/static";
 
 // Detectar automáticamente el dominio de Vercel
-const VERCEL_URL = process.env.VERCEL_URL 
-  ? `https://${process.env.VERCEL_URL}/` 
+const VERCEL_URL = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}/`
   : "https://haion-landing-mvp7-gsoyg8s4r-sadaborras63-gmailcoms-projects.vercel.app/";
 
 export default defineConfig({
   site: VERCEL_URL,
-  output: "static", 
+  output: "static",
   adapter: vercel(),
   trailingSlash: "never",
   integrations: [
