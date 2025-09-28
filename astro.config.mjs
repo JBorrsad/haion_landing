@@ -10,6 +10,9 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap(), // generará /sitemap-index.xml
-    robotsTxt(),
+    robotsTxt({
+      policy: [{ userAgent: "*", allow: "/" }],
+      sitemap: "https://jborrsad.github.io/haion_landing/sitemap-index.xml",
+    }),
   ],
 });
