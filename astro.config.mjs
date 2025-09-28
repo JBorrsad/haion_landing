@@ -11,7 +11,8 @@ const VERCEL_URL = process.env.VERCEL_URL
 
 export default defineConfig({
   site: VERCEL_URL,
-  output: "static",
+  // Sin base path para Vercel (solo para GitHub Pages)
+  output: "static", 
   adapter: vercel(),
   trailingSlash: "never",
   integrations: [
